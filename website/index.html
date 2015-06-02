@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mentrestant a Barcelona...</title>
+    <meta name="description" content="AQUEST ÉS EL MAPA DE LA BARCELONA QUE TENIM, UNA CIUTAT CADA COP MÉS POLARITZADA, en la que molta gent hi viu i treballa en condicions indignes TOT I ÉSSER UNA CIUTAT AMB PROU RECURSOS I PLENA DE POTENCIALITATS, amb un teixit social i una capacitat creativa excepcionals.">
+    <meta name="author" content="Designed by Paadin and Coded by Roger, rogerlavaca@gmail.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.01, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/papaparse.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/jquery.ddslick.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/jquery.jsanalysis.js"></script>
+    <script src="js/sortable.min.js"></script>
+    <script src="js/scripts.js?versio=1.2"></script>
+    <link rel="stylesheet" type="text/css" href="estils.css?versio=1" media="screen" />
+    <link rel="stylesheet" type="text/css" href="sweetalert2.css" media="screen" />
+</head>
+
+<body>
+    <div class="meitat01"></div>
+    <div class="continent">
+    <div id="t_spinner">
+      <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+            <center><br><br><br>Carregant dades</center>
+      </div>
+    </div>            
+        <div class="contingut">
+            <div id="titol"><span id="titol1">&nbsp;</span><span id="titol2"></span></div>
+            <div id="titolet">MENTRESTANT A BARCELONA...</div>
+            <div id="menus">
+                <div id="select_cuartils"></div>
+                <div id="select_percent"></div>
+            </div>
+            <div id="anys">
+                  <div class="etiqueta">SÈRIE TEMPORAL</div>
+                  <div class="any01">2008</div>
+                  <div class="any02">2009</div>
+                  <div class="any03">2010</div>
+                  <div class="any04">2011</div>
+                  <div class="any05">2012</div>
+                  <div class="any06">2013</div>
+            </div>
+            <div id="textcampanya"><b>AQUEST ÉS EL MAPA DE LA BARCELONA QUE TENIM, UNA CIUTAT CADA COP MÉS POLARITZADA</b>, en la que molta gent hi viu i treballa en condicions indignes <b>TOT I SER UNA CIUTAT AMB PROU RECURSOS I PLENA DE POTENCIALITATS</b>, amb un teixit social i una capacitat creativa excepcionals.<br><br>El Govern de CiU té una part important de responsabilitat en aquesta deriva mercantilitzadora. Perquè no ha tingut un projecte propi de ciutat i perquè ha afavorit interessos privats que poca cosa tenen a veure amb el bé comú.<br><br><b>BARCELONA EN COMÚ</b> vol governar per revertir aquesta situació. Per això, proposem un <b>PLA DE XOC</b> ambiciós i alhora factible.<BR><BR><b>DESCOBREIX EL NOSTRE PLA PER ACONSEGUIR LA BARCELONA QUE VOLEM</b>, navegant pels diferents aspectes de la nostra realitat: l’atur, la distribució de la renda, la pressió turística... tot allò que dibuixa el plànol del nostre present i ens assenyala el camí a seguir demà.</div>
+            <div id="textintro"></div>
+            <div id="textintro_col2"></div>
+            <div id="escala"><table id="taula_escala"><tr><td style="width:60px;"><div id="vmin">Min.</div></td><td style="text-align:right;"><div id="vmax">Màx.</td></tr>
+            <tr><td colspan="2"><img src="img/escala.png" border="0" width="131" height="22"></td></tr></table>
+            </div>
+            <div id ="Boles">
+            <div id="bola0" class="bola"></div>
+            <div id="bola1" class="bola"></div>
+            <div id="bola2" class="bola"></div>
+            <div id="bola3" class="bola"></div>
+            <div id="bola4" class="bola"></div>
+            <div id="bola5" class="bola"></div>
+            <div id="bola6" class="bola"></div>
+            <div id="bola7" class="bola"></div>
+            <div id="bola8" class="bola"></div>
+            <div id="bola9" class="bola"></div>
+            <div id="bola10" class="bola"></div>
+            <div id="bola11" class="bola"></div>
+            <div id="bola12" class="bola"></div>
+            <div id="bola13" class="bola"></div>
+            <div id="bola14" class="bola"></div>
+            <div id="bola15" class="bola"></div>
+            <div id="bola16" class="bola"></div>
+            <div id="bola17" class="bola"></div>
+            <div id="bola18" class="bola"></div>
+            <div id="bola19" class="bola"></div>
+            <div id="bola20" class="bola"></div>
+            <div id="bola21" class="bola"></div>
+            <div id="bola22" class="bola"></div>
+            <div id="bola23" class="bola"></div>
+            <div id="bola24" class="bola"></div>
+            <div id="bola25" class="bola"></div>
+            <div id="bola26" class="bola"></div>
+            <div id="bola27" class="bola"></div>
+            <div id="bola28" class="bola"></div>
+            <div id="bola29" class="bola"></div>
+            <div id="bola30" class="bola"></div>
+            <div id="bola31" class="bola"></div>
+            <div id="bola32" class="bola"></div>
+            <div id="bola33" class="bola"></div>
+            <div id="bola34" class="bola"></div>
+            <div id="bola35" class="bola"></div>
+            <div id="bola36" class="bola"></div>
+            <div id="bola37" class="bola"></div>
+            <div id="bola38" class="bola"></div>
+            <div id="bola39" class="bola"></div>
+            <div id="bola40" class="bola"></div>
+            <div id="bola41" class="bola"></div>
+            <div id="bola42" class="bola"></div>
+            <div id="bola43" class="bola"></div>
+            <div id="bola44" class="bola"></div>
+            <div id="bola45" class="bola"></div>
+            <div id="bola46" class="bola"></div>
+            <div id="bola47" class="bola"></div>
+            <div id="bola48" class="bola"></div>
+            <div id="bola49" class="bola"></div>
+            <div id="bola50" class="bola"></div>
+            <div id="bola51" class="bola"></div>
+            <div id="bola52" class="bola"></div>
+            <div id="bola53" class="bola"></div>
+            <div id="bola54" class="bola"></div>
+            <div id="bola55" class="bola"></div>
+            <div id="bola56" class="bola"></div>
+            <div id="bola57" class="bola"></div>
+            <div id="bola58" class="bola"></div>
+            <div id="bola59" class="bola"></div>
+            <div id="bola60" class="bola"></div>
+            <div id="bola61" class="bola"></div>
+            <div id="bola62" class="bola"></div>
+            <div id="bola63" class="bola"></div>
+            <div id="bola64" class="bola"></div>
+            <div id="bola65" class="bola"></div>
+            <div id="bola66" class="bola"></div>
+            <div id="bola67" class="bola"></div>
+            <div id="bola68" class="bola"></div>
+            <div id="bola69" class="bola"></div>
+            <div id="bola70" class="bola"></div>
+            <div id="bola71" class="bola"></div>
+            <div id="bola72" class="bola"></div>
+            <div id="bola73" class="bola"></div>
+
+            <div id="bola33_e" class="text"><span class="fonstext">MONTBAU</span>
+            </div>
+            <div id="bola24_e" class="text"><span class="fonstext">CANYELLES</span>
+            </div>
+            <div id="bola19_e" class="text"><span class="fonstext">TORRE BARÓ</span>
+            </div>
+            <div id="bola18_e" class="text"><span class="fonstext">CIUTAT MERIDIANA</span>
+            </div>
+            <div id="bola17_e" class="text"><span class="fonstext">VALLBONA</span>
+            </div>
+            <div id="bola23_e" class="text"><span class="fonstext">ROQUETES</span>
+            </div>
+            <div id="bola25_e" class="text"><span class="fonstext">LA GUINEUETA</span>
+            </div>
+            <div id="bola30_e" class="text"><span class="fonstext">HORTA</span>
+            </div>
+            <div id="bola32_e" class="text"><span class="fonstext">VALL D'HEBRON</span>
+            </div>
+            <div id="bola34_e" class="text"><span class="fonstext">SANT GENÍS DELS AGUDELLS</span>
+            </div>
+            <div id="bola16_e" class="text"><span class="fonstext">TRINITAT VELLA</span>
+            </div>
+            <div id="bola20_e" class="text"><span class="fonstext">TRINITAT NOVA</span>
+            </div>
+            <div id="bola22_e" class="text"><span class="fonstext">VERDUN</span>
+            </div>
+            <div id="bola29_e" class="text"><span class="fonstext">VILAPICINA<br> I LA TORRE LLOBETA</span>
+            </div>
+            <div id="bola26_e" class="text"><span class="fonstext">CAN PEGUERA</span>
+            </div>
+            <div id="bola31_e" class="text"><span class="fonstext">LA CLOTA</span>
+            </div>
+            <div id="bola51_e" class="text"><span class="fonstext">VALLVIDRERA,<br> EL TIBIDABO I LES PLANES</span>
+            </div>
+            <div id="bola35_e" class="text"><span class="fonstext">TEIXONERA</span>
+            </div>
+            <div id="bola21_e" class="text"><span class="fonstext">LA PROSPERITAT</span>
+            </div>
+            <div id="bola28_e" class="text"><span class="fonstext">PORTA</span>
+            </div>
+            <div id="bola27_e" class="text"><span class="fonstext">TURÓ<br> DE LA PEIRA</span>
+            </div>
+            <div id="bola37_e" class="text"><span class="fonstext">FONT<br> D'EN FARGUES</span>
+            </div>
+            <div id="bola36_e" class="text"><span class="fonstext">EL CARMEL</span>
+            </div>
+            <div id="bola45_e" class="text"><span class="fonstext">VALLCARCA<br> I ELS PENITENTS</span>
+            </div>
+            <div id="bola44_e" class="text"><span class="fonstext">EL COLL</span>
+            </div>
+            <div id="bola50_e" class="text"><span class="fonstext">SARRIÀ</span>
+            </div>
+            <div id="bola52_e" class="text"><span class="fonstext">PEDRALBES</span>
+            </div>
+            <div id="bola15_e" class="text"><span class="fonstext">BARÓ DE VIVER</span>
+            </div>
+            <div id="bola13_e" class="text"><span class="fonstext">SANT ANDREU</span>
+            </div>
+            <div id="bola11_e" class="text"><span class="fonstext">EL CONGRÉS<br> I ELS INDIANS</span>
+            </div>
+            <div id="bola39_e" class="text"><span class="fonstext">CAN BARÓ</span>
+            </div>
+            <div id="bola38_e" class="text"><span class="fonstext">GUINARDÓ</span>
+            </div>
+            <div id="bola43_e" class="text"><span class="fonstext">LA SALUT</span>
+            </div>
+            <div id="bola49_e" class="text"><span class="fonstext">LES TRES TORRES</span>
+            </div>
+            <div id="bola48_e" class="text"><span class="fonstext">SANT GERVASI<br> LA BONANOVA</span>
+            </div>
+            <div id="bola46_e" class="text"><span class="fonstext">EL PUTXET<br> I EL FARRÓ</span>
+            </div>
+            <div id="bola53_e" class="text"><span class="fonstext">MATERNITAT<br> I SANT RAMON</span>
+            </div>
+            <div id="bola14_e" class="text"><span class="fonstext">EL BON PASTOR</span>
+            </div>
+            <div id="bola12_e" class="text"><span class="fonstext">LA SAGRERA</span>
+            </div>
+            <div id="bola10_e" class="text"><span class="fonstext">NAVAS</span>
+            </div>
+            <div id="bola9_e" class="text"><span class="fonstext">CAMP DE L'ARPA DEL CLOT</span>
+            </div>
+            <div id="bola42_e" class="text"><span class="fonstext">VILA<br> DE GRÀCIA</span>
+            </div>
+            <div id="bola41_e" class="text"><span class="fonstext">CAMP D'EN GRASSOT<br> I GRÀCIA NOVA</span>
+            </div>
+            <div id="bola40_e" class="text"><span class="fonstext">BAIX GUINARDÓ</span>
+            </div>
+            <div id="bola56_e" class="text"><span class="fonstext">SANTS-BADAL</span>
+            </div>
+            <div id="bola55_e" class="text"><span class="fonstext">SANTS</span>
+            </div>
+            <div id="bola54_e" class="text"><span class="fonstext">LES CORTS</span>
+            </div>
+            <div id="bola47_e" class="text"><span class="fonstext">SANT GERVASI GALVANY</span>
+            </div>
+            <div id="bola8_e" class="text"><span class="fonstext">CLOT</span>
+            </div>
+            <div id="bola1_e" class="text"><span class="fonstext">SANT MARTÍ<br> DE PROVENÇALS</span>
+            </div>
+            <div id="bola0_e" class="text"><span class="fonstext">LA VERNEDA<br> I LA PAU</span>
+            </div>
+            <div id="bola67_e" class="text"><span class="fonstext">SAGRADA FAMILIA</span>
+            </div>
+            <div id="bola66_e" class="text"><span class="fonstext">DRETA DE L'EIXAMPLE</span>
+            </div>
+            <div id="bola65_e" class="text"><span class="fonstext">ANTIGA ESQUERRA DE L'EIXAMPLE</span>
+            </div>
+            <div id="bola64_e" class="text"><span class="fonstext">NOVA ESQUERRA<br> DE L'EIXAMPLE</span>
+            </div>
+            <div id="bola58_e" class="text"><span class="fonstext">HOSTAFRANCS</span>
+            </div>
+            <div id="bola57_e" class="text"><span class="fonstext">LA BORDETA</span>
+            </div>
+            <div id="bola7_e" class="text"><span class="fonstext">PARC I LA LLACUNA<br> DEL POBLENOU</span>
+            </div>
+            <div id="bola3_e" class="text"><span class="fonstext">EL BESÒS I<br> EL MARESME</span>
+            </div>
+            <div id="bola2_e" class="text"><span class="fonstext">PROVENÇALS<br> DEL POBLENOU</span>
+            </div>
+            <div id="bola69_e" class="text"><span class="fonstext">S. PERE, S. CATERINA<br> I LA RIBERA</span>
+            </div>
+            <div id="bola68_e" class="text"><span class="fonstext">FORT PIENC</span>
+            </div>
+            <div id="bola63_e" class="text"><span class="fonstext">SANT ANTONI</span>
+            </div>
+            <div id="bola72_e" class="text"><span class="fonstext">RAVAL</span>
+            </div>
+            <div id="bola71_e" class="text"><span class="fonstext">BARRI GÒTIC</span>
+            </div>
+            <div id="bola60_e" class="text"><span class="fonstext">MARINA DEL PORT</span>
+            </div>
+            <div id="bola59_e" class="text"><span class="fonstext">FONT DE<br> LA GUATLLA</span>
+            </div>
+            <div id="bola5_e" class="text"><span class="fonstext">POBLENOU</span>
+            </div>
+            <div id="bola4_e" class="text"><span class="fonstext">DIAGONAL MAR I<br> EL FRONT MARÍTIM<br> DEL POBLENOU</span>
+            </div>
+            <div id="bola6_e" class="text"><span class="fonstext">VILA OLÍMPICA<br> DEL POBLENOU</span>
+            </div>
+            <div id="bola70_e" class="text"><span class="fonstext">BARCELONETA</span>
+            </div>
+            <div id="bola62_e" class="text"><span class="fonstext">POBLE SEC</span>
+            </div>
+            <div id="bola61_e" class="text"><span class="fonstext">MARINA<br> DEL PRAT VERMELL</span>
+            </div>
+
+            <canvas id="chart-area0" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area1" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area2" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area3" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area4" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area5" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area6" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area7" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area8" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area9" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area10" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area11" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area12" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area13" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area14" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area15" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area16" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area17" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area18" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area19" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area20" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area21" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area22" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area23" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area24" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area25" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area26" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area27" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area28" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area29" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area30" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area31" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area32" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area33" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area34" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area35" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area36" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area37" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area38" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area39" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area40" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area41" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area42" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area43" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area44" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area45" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area46" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area47" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area48" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area49" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area50" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area51" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area52" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area53" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area54" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area55" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area56" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area57" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area58" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area59" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area60" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area61" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area62" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area63" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area64" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area65" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area66" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area67" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area68" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area69" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area70" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area71" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area72" width="45" height="45" />
+            </canvas>
+            <canvas id="chart-area73" width="45" height="45" />
+            </canvas>
+            </div>
+            <div id="reset">Esborra</div>
+            <div id="reset2">Esborra</div>
+            <div id="ajuda">* Si voleu veure amb més detall les dades de cada barri feu-hi click a sobre</div>
+            <div id="taula_final">
+                <table id="taula_final_dades" class="sortable-theme-light" data-sortable>
+                  <thead>
+                        <tr> 
+                              <th id="t_col_num">&nbsp;</th> 
+                              <th id="t_col_barri"></th> 
+                              <th id="t_col1"></th> 
+                              <th id="t_col2"></th> 
+                        </tr>    
+                  </thead>
+                  <tbody id="dades_taula">
+                  <tr><td id="colnum">&nbsp;1</td><td id="colbarri0"></td><td id="col1dades0">1</td><td id="col2dades0">1</td></tr>
+                  <tr><td id="colnum">&nbsp;2</td><td id="colbarri1"></td><td id="col1dades1">2</td><td id="col2dades1">2</td></tr>
+                  <tr><td id="colnum">&nbsp;3</td><td id="colbarri2"></td><td id="col1dades2">3</td><td id="col2dades2">3</td></tr>
+                  <tr><td id="colnum">&nbsp;4</td><td id="colbarri3"></td><td id="col1dades3"></td><td id="col2dades3"></td></tr>
+                  <tr><td id="colnum">&nbsp;5</td><td id="colbarri4"></td><td id="col1dades4"></td><td id="col2dades4"></td></tr>
+                  <tr><td id="colnum">&nbsp;6</td><td id="colbarri5"></td><td id="col1dades5"></td><td id="col2dades5"></td></tr>
+                  <tr><td id="colnum">&nbsp;7</td><td id="colbarri6"></td><td id="col1dades6"></td><td id="col2dades6"></td></tr>
+                  <tr><td id="colnum">&nbsp;8</td><td id="colbarri7"></td><td id="col1dades7"></td><td id="col2dades7"></td></tr>
+                  <tr><td id="colnum">&nbsp;9</td><td id="colbarri8"></td><td id="col1dades8"></td><td id="col2dades8"></td></tr>
+                  <tr><td id="colnum">10</td><td id="colbarri9"></td><td id="col1dades9"></td><td id="col2dades9"></td></tr>
+                  <tr><td id="colnum">11</td><td id="colbarri10"></td><td id="col1dades10"></td><td id="col2dades10"></td></tr>
+                  <tr><td id="colnum">12</td><td id="colbarri11"></td><td id="col1dades11"></td><td id="col2dades11"></td></tr>
+                  <tr><td id="colnum">13</td><td id="colbarri12"></td><td id="col1dades12"></td><td id="col2dades12"></td></tr>
+                  <tr><td id="colnum">14</td><td id="colbarri13"></td><td id="col1dades13"></td><td id="col2dades13"></td></tr>
+                  <tr><td id="colnum">15</td><td id="colbarri14"></td><td id="col1dades14"></td><td id="col2dades14"></td></tr>
+                  <tr><td id="colnum">16</td><td id="colbarri15"></td><td id="col1dades15"></td><td id="col2dades15"></td></tr>
+                  <tr><td id="colnum">17</td><td id="colbarri16"></td><td id="col1dades16"></td><td id="col2dades16"></td></tr>
+                  <tr><td id="colnum">18</td><td id="colbarri17"></td><td id="col1dades17"></td><td id="col2dades17"></td></tr>
+                  <tr><td id="colnum">19</td><td id="colbarri18"></td><td id="col1dades18"></td><td id="col2dades18"></td></tr>
+                  <tr><td id="colnum">20</td><td id="colbarri19"></td><td id="col1dades19"></td><td id="col2dades19"></td></tr>
+                  <tr><td id="colnum">21</td><td id="colbarri20"></td><td id="col1dades20"></td><td id="col2dades20"></td></tr>
+                  <tr><td id="colnum">22</td><td id="colbarri21"></td><td id="col1dades21"></td><td id="col2dades21"></td></tr>
+                  <tr><td id="colnum">23</td><td id="colbarri22"></td><td id="col1dades22"></td><td id="col2dades22"></td></tr>
+                  <tr><td id="colnum">24</td><td id="colbarri23"></td><td id="col1dades23"></td><td id="col2dades23"></td></tr>
+                  <tr><td id="colnum">25</td><td id="colbarri24"></td><td id="col1dades24"></td><td id="col2dades24"></td></tr>
+                  <tr><td id="colnum">26</td><td id="colbarri25"></td><td id="col1dades25"></td><td id="col2dades25"></td></tr>
+                  <tr><td id="colnum">27</td><td id="colbarri26"></td><td id="col1dades26"></td><td id="col2dades26"></td></tr>
+                  <tr><td id="colnum">28</td><td id="colbarri27"></td><td id="col1dades27"></td><td id="col2dades27"></td></tr>
+                  <tr><td id="colnum">29</td><td id="colbarri28"></td><td id="col1dades28"></td><td id="col2dades28"></td></tr>
+                  <tr><td id="colnum">30</td><td id="colbarri29"></td><td id="col1dades29"></td><td id="col2dades29"></td></tr>
+                  <tr><td id="colnum">31</td><td id="colbarri30"></td><td id="col1dades30"></td><td id="col2dades30"></td></tr>
+                  <tr><td id="colnum">32</td><td id="colbarri31"></td><td id="col1dades31"></td><td id="col2dades31"></td></tr>
+                  <tr><td id="colnum">33</td><td id="colbarri32"></td><td id="col1dades32"></td><td id="col2dades32"></td></tr>
+                  <tr><td id="colnum">34</td><td id="colbarri33"></td><td id="col1dades33"></td><td id="col2dades33"></td></tr>
+                  <tr><td id="colnum">35</td><td id="colbarri34"></td><td id="col1dades34"></td><td id="col2dades34"></td></tr>
+                  <tr><td id="colnum">36</td><td id="colbarri35"></td><td id="col1dades35"></td><td id="col2dades35"></td></tr>
+                  <tr><td id="colnum">37</td><td id="colbarri36"></td><td id="col1dades36"></td><td id="col2dades36"></td></tr>
+                  <tr><td id="colnum">38</td><td id="colbarri37"></td><td id="col1dades37"></td><td id="col2dades37"></td></tr>
+                  <tr><td id="colnum">39</td><td id="colbarri38"></td><td id="col1dades38"></td><td id="col2dades38"></td></tr>
+                  <tr><td id="colnum">40</td><td id="colbarri39"></td><td id="col1dades39"></td><td id="col2dades39"></td></tr>
+                  <tr><td id="colnum">41</td><td id="colbarri40"></td><td id="col1dades40"></td><td id="col2dades40"></td></tr>
+                  <tr><td id="colnum">42</td><td id="colbarri41"></td><td id="col1dades41"></td><td id="col2dades41"></td></tr>
+                  <tr><td id="colnum">43</td><td id="colbarri42"></td><td id="col1dades42"></td><td id="col2dades42"></td></tr>
+                  <tr><td id="colnum">44</td><td id="colbarri43"></td><td id="col1dades43"></td><td id="col2dades43"></td></tr>
+                  <tr><td id="colnum">45</td><td id="colbarri44"></td><td id="col1dades44"></td><td id="col2dades44"></td></tr>
+                  <tr><td id="colnum">46</td><td id="colbarri45"></td><td id="col1dades45"></td><td id="col2dades45"></td></tr>
+                  <tr><td id="colnum">47</td><td id="colbarri46"></td><td id="col1dades46"></td><td id="col2dades46"></td></tr>
+                  <tr><td id="colnum">48</td><td id="colbarri47"></td><td id="col1dades47"></td><td id="col2dades47"></td></tr>
+                  <tr><td id="colnum">49</td><td id="colbarri48"></td><td id="col1dades48"></td><td id="col2dades48"></td></tr>
+                  <tr><td id="colnum">50</td><td id="colbarri49"></td><td id="col1dades49"></td><td id="col2dades49"></td></tr>
+                  <tr><td id="colnum">51</td><td id="colbarri50"></td><td id="col1dades50"></td><td id="col2dades50"></td></tr>
+                  <tr><td id="colnum">52</td><td id="colbarri51"></td><td id="col1dades51"></td><td id="col2dades51"></td></tr>
+                  <tr><td id="colnum">53</td><td id="colbarri52"></td><td id="col1dades52"></td><td id="col2dades52"></td></tr>
+                  <tr><td id="colnum">54</td><td id="colbarri53"></td><td id="col1dades53"></td><td id="col2dades53"></td></tr>
+                  <tr><td id="colnum">55</td><td id="colbarri54"></td><td id="col1dades54"></td><td id="col2dades54"></td></tr>
+                  <tr><td id="colnum">56</td><td id="colbarri55"></td><td id="col1dades55"></td><td id="col2dades55"></td></tr>
+                  <tr><td id="colnum">57</td><td id="colbarri56"></td><td id="col1dades56"></td><td id="col2dades56"></td></tr>
+                  <tr><td id="colnum">58</td><td id="colbarri57"></td><td id="col1dades57"></td><td id="col2dades57"></td></tr>
+                  <tr><td id="colnum">59</td><td id="colbarri58"></td><td id="col1dades58"></td><td id="col2dades58"></td></tr>
+                  <tr><td id="colnum">60</td><td id="colbarri59"></td><td id="col1dades59"></td><td id="col2dades59"></td></tr>
+                  <tr><td id="colnum">61</td><td id="colbarri60"></td><td id="col1dades60"></td><td id="col2dades60"></td></tr>
+                  <tr><td id="colnum">62</td><td id="colbarri61"></td><td id="col1dades61"></td><td id="col2dades61"></td></tr>
+                  <tr><td id="colnum">63</td><td id="colbarri62"></td><td id="col1dades62"></td><td id="col2dades62"></td></tr>
+                  <tr><td id="colnum">64</td><td id="colbarri63"></td><td id="col1dades63"></td><td id="col2dades63"></td></tr>
+                  <tr><td id="colnum">65</td><td id="colbarri64"></td><td id="col1dades64"></td><td id="col2dades64"></td></tr>
+                  <tr><td id="colnum">66</td><td id="colbarri65"></td><td id="col1dades65"></td><td id="col2dades65"></td></tr>
+                  <tr><td id="colnum">67</td><td id="colbarri66"></td><td id="col1dades66"></td><td id="col2dades66"></td></tr>
+                  <tr><td id="colnum">68</td><td id="colbarri67"></td><td id="col1dades67"></td><td id="col2dades67"></td></tr>
+                  <tr><td id="colnum">69</td><td id="colbarri68"></td><td id="col1dades68"></td><td id="col2dades68"></td></tr>
+                  <tr><td id="colnum">70</td><td id="colbarri69"></td><td id="col1dades69"></td><td id="col2dades69"></td></tr>
+                  <tr><td id="colnum">71</td><td id="colbarri70"></td><td id="col1dades70"></td><td id="col2dades70"></td></tr>
+                  <tr><td id="colnum">72</td><td id="colbarri71"></td><td id="col1dades71"></td><td id="col2dades71"></td></tr>
+                  <tr><td id="colnum">73</td><td id="colbarri72"></td><td id="col1dades72"></td><td id="col2dades72"></td></tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+      <div id="fletxa"></div>
+    </div>
+<div id="colabora">Aquesta visualització inclou les taules que veus a sota i les fonts d'on han sortit les dades. Si vols contribuïr-hi aportant noves dimensions contacta'ns i les inclourem: <a href="mailto:analisi.guanyem@gmail.com?subject=Open Data ciutadà" class="font">analisi.guanyem@gmail.com</a>
+</div>
+</body>
+</html>
